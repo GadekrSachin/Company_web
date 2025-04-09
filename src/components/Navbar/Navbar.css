@@ -1,0 +1,74 @@
+/* Define CSS variables */
+:root {
+  --primary-color: #007bff;
+  --primary-hover-color: #005ecb;
+  --secondary-color: #e6f0ff;
+  --text-color: #333;
+  --border-color: #333;
+  --background-color: #ffffff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  background-color: var(--background-color);
+  border: rgba(51, 51, 51, 0.2) 0.2px solid; /* Reduced border color intensity */
+  position: fixed; /* Keeps the navbar fixed at the top */
+  top: 0; /* Positions it at the top of the viewport */
+  left: 8%; /* Adds equal margin-like spacing on the left */
+  right: 8%;
+  width: auto; /* Adjusts the width dynamically */
+  z-index: 1000; /* Ensures it stays above other elements */
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.logo {
+  font-size: 32px; /* Increased font size */
+  font-style: italic;
+  font-weight: bold;
+}
+
+.nav-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 18px; /* Increased font size */
+}
+
+.nav-links a:hover {
+  color: var(--primary-color);
+}
+
+.nav-buttons .btn {
+  margin-left: 10px;
+  padding: 12px 20px; /* Increased padding */
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 16px; /* Increased font size */
+  border: none;
+  cursor: pointer;
+}
+
+.learn-more {
+  background: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.learn-more:hover {
+  background-color: var(--secondary-color);
+}
+
+.contact-us {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.contact-us:hover {
+  background-color: var(--primary-hover-color);
+}
