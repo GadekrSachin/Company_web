@@ -147,3 +147,172 @@
   margin: 0; /* Removes default margin */
   text-align: left; /* Aligns the text to the left */
 }
+
+/* office section */
+.office-section {
+  position: relative;
+  width: 100%;
+  padding-top: 60%; /* This sets the height to 40% of the width */
+  background-color: #f5f7fa;
+  overflow: hidden;
+}
+
+.office-section img {
+  position: absolute;
+  top: 0;
+  left: -85px;
+  width: 124%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* second image  */
+
+.second-photo-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh; /* Full height of the viewport */
+  background-color: #000; /* Black background */
+  color: #fff; /* White text color */
+  padding: 0px; /* Remove padding to ensure full coverage */
+  margin: 50px -100px 50px -100px;
+}
+
+.second-photo-text {
+  flex: 1; /* Takes up 50% of the section */
+  max-width: 50%; /* Ensures it doesn't exceed 50% */
+  padding: 40px; /* Add padding for spacing inside the text area */
+  box-sizing: border-box; /* Includes padding in the width calculation */
+}
+
+.second-photo-text h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff; /* White text color */
+}
+
+.second-photo-text h1 span {
+  font-style: italic;
+  color: #facc15; /* Yellow tone to highlight */
+}
+
+.second-photo-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 25px;
+  color: #d1d5db; /* Cool gray text for description */
+}
+
+.second-photo-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.second-photo-text li {
+  margin-bottom: 14px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.second-photo-text li span {
+  background-color: #1f2937; /* Dark gray background for code-like style */
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-family: monospace;
+  margin-right: 10px;
+  color: #facc15; /* Yellow text color */
+}
+
+.second-photo-image {
+  flex: 1; /* Takes up 50% of the section */
+  height: 100%; /* Full height of the section */
+  overflow: hidden; /* Ensures the image doesn't overflow */
+}
+
+.second-photo-image img {
+  width: 100%; /* Full width of the container */
+  height: 100%; /* Full height of the container */
+  object-fit: cover; /* Ensures the image covers the container without distortion */
+  border-radius: 0; /* Remove border radius for full coverage */
+}
+
+/* mobile solution */
+
+.mobile-solution {
+  padding: 20px 20px;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-content {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.left-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 50px;
+}
+
+.left-content h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--heading-color);
+  margin: 0;
+  text-align: left;
+}
+
+.left-content h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--heading-color);
+  margin-left: -20px;
+  text-align: left;
+}
+
+.right-content {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20rem;
+}
+
+.right-content p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--paragraph-color);
+  margin: 0;
+  text-align: left;
+}
+
+.btnn {
+  margin: 15px 40rem 0px 0px;
+  padding: 12px 20px; /* Increased padding */
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 16px; /* Increased font size */
+  border: 1px solid var(--primary-color);
+  cursor: pointer;
+}
+
+.learn-more {
+  background: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.learn-more:hover {
+  background-color: var(--secondary-color);
+}
