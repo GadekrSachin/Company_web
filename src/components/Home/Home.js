@@ -4,6 +4,11 @@ import firstImage from "../../assets/project.jpeg";
 import Navbar from "../Navbar/Navbar.js";
 import officeImg from "../../assets/3.png";
 import dunnyimg from "../../assets/dunny.png";
+import mobiledev from "../../assets/Mobiledevelopment.png";
+import automation from "../../assets/automation_photo.png";
+import ai_ml_automation from "../../assets/ai-ml automation.png";
+import llm from "../../assets/llm.png";
+import Footer from "./../Footer/Footer.js";
 
 const Home = () => {
   return (
@@ -118,6 +123,101 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* {second photot} */}
+      <section className="office-section">
+        <img src={mobiledev} alt="Team collaborating in office" />
+      </section>
+
+      {/* {info} */}
+      <section className="photo-section">
+        <div className="photo-image">
+          <img
+            src={automation}
+            alt="Team working on modern digital solutions"
+          />
+        </div>
+        <div className="photo-text">
+          <h1>Crafting Exceptional Web Experiences for your Business</h1>
+          <p>
+            At Shubh Technology, we specialize in building robust and scalable
+            web applications using cutting-edge technologies. Our expertise in
+            Angular, React, Next.js, and Node.js ensures that your website is
+            not only visually appealing but also delivers exceptional
+            performance and user experience.
+          </p>
+          <ul>
+            <li>
+              <span>✔️</span> Custom Web Development: Tailored solutions to meet
+              your specific business needs.
+            </li>
+            <li>
+              <span>✔️</span> Responsive Design: Ensuring your website adapts to
+              all devices.
+            </li>
+            <li>
+              <span>✔️</span> End-to-End Product Support.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      {/* {ai ml} */}
+      <section className="mobile-solutionn">
+        <div className="about-content ">
+          <div className="left-contentt">
+            <h3>SMARTER SOLTUION</h3>
+            <h2 style={{ color: "#ffffff" }}>AI/Ml & Bot Integration</h2>
+          </div>
+          <div className="right-content">
+            <p style={{ color: "#ffffff" }}>
+              Founded in 2020, Shubh Technology has rapidly become a trusted
+              partner for businesses seeking to harness the power of technology.
+              Our mission is to empower organizations with cutting-edge
+              solutions that enhance efficiency and drive growth.
+            </p>
+            <button className="white-btnn">Explore</button>
+          </div>
+        </div>
+      </section>
+
+      {/* {ai-ml section} */}
+      <section className="ai-section">
+        <img src={ai_ml_automation} alt="Team collaborating in office" />
+      </section>
+
+      {/* LLM */}
+      <section className="photo-section photo-section--dark">
+        <div className="photo-image">
+          <img src={llm} alt="Team working on modern digital solutions" />
+        </div>
+        <div className="photo-text">
+          <h1>
+            Unlock the Power of Large Language Models with Shubh Technology
+          </h1>
+          <p>
+            At Shubh Technology, we specialize in building robust and scalable
+            web applications using cutting-edge technologies. Our expertise in
+            Angular, React, Next.js, and Node.js ensures that your website is
+            not only visually appealing but also delivers exceptional
+            performance and user experience.
+          </p>
+          <ul>
+            <li>
+              <span>🤖</span> Custom Web Development: Tailored solutions to meet
+              your specific business needs.
+            </li>
+            <li>
+              <span>🤖</span> Responsive Design: Ensuring your website adapts to
+              all devices.
+            </li>
+            <li>
+              <span>🤖</span> End-to-End Product Support.
+            </li>
+          </ul>
+        </div>
+      </section>
+      <Footer></Footer>
     </div>
   );
 };

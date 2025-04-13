@@ -8,6 +8,8 @@
   --paragraph-color: #0f0d0d;
   --border-color: #ccc;
   --background-color: #ffffff;
+
+  --background-color2: #0f0d0d;
 }
 
 /* Layout styles */
@@ -155,6 +157,7 @@
   padding-top: 60%; /* This sets the height to 40% of the width */
   background-color: #f5f7fa;
   overflow: hidden;
+  border-radius: 8px;
 }
 
 .office-section img {
@@ -240,37 +243,38 @@
 }
 
 /* mobile solution */
-
 .mobile-solution {
-  padding: 20px 20px;
+  padding: 50px 20px;
   background-color: var(--background-color);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
 .about-content {
-  max-width: 1200px;
   display: flex;
-  flex-direction: row;
-  gap: 30px;
+  max-width: 1200px;
   width: 100%;
-  flex-wrap: wrap;
+  gap: 40px;
 }
 
-.left-content {
+.left-content,
+.right-content {
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 50px;
+}
+
+.left-content {
+  padding: 0 10px;
 }
 
 .left-content h3 {
   font-size: 24px;
   font-weight: 600;
   color: var(--heading-color);
-  margin: 0;
+  margin-bottom: 10px;
   text-align: left;
 }
 
@@ -278,33 +282,50 @@
   font-size: 32px;
   font-weight: bold;
   color: var(--heading-color);
-  margin-left: -20px;
+  margin: -22px;
   text-align: left;
 }
 
 .right-content {
-  flex: 2;
-  display: flex;
-  flex-direction: column;
-  margin-right: 20rem;
+  padding: 0 20px;
+  justify-content: space-between;
 }
 
 .right-content p {
   font-size: 18px;
   line-height: 1.8;
   color: var(--paragraph-color);
-  margin: 0;
+  margin-bottom: 20px;
   text-align: left;
 }
 
+.learn-more {
+  align-self: flex-start;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 .btnn {
-  margin: 15px 40rem 0px 0px;
   padding: 12px 20px; /* Increased padding */
   border-radius: 6px;
   font-weight: 500;
   font-size: 16px; /* Increased font size */
   border: 1px solid var(--primary-color);
   cursor: pointer;
+}
+.white-btnn {
+  background: transparent;
+  border: 1px solid var(--background-color);
+  padding: 12px 20px; /* Increased padding */
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  color: var(--background-color);
+  margin: 20px 28rem 0px 0px;
 }
 
 .learn-more {
@@ -315,4 +336,124 @@
 
 .learn-more:hover {
   background-color: var(--secondary-color);
+}
+
+/* info */
+
+.photo-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  background-color: #fff;
+  color: #090101;
+  padding: 0px;
+  margin: 50px -100px;
+}
+
+.photo-image {
+  flex: 1;
+  height: 100%;
+  overflow: hidden;
+}
+
+.photo-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.photo-text {
+  flex: 1;
+  max-width: 50%;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.photo-text h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #121010;
+}
+
+.photo-text h1 span {
+  font-style: italic;
+  color: #facc15;
+}
+
+.photo-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 25px;
+  color: #070707;
+}
+
+.photo-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.photo-text li {
+  margin-bottom: 14px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.photo-text li span {
+  background-color: #fff;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-family: monospace;
+  margin-right: 10px;
+}
+
+/* AIml  */
+.mobile-solutionn {
+  background-color: var(--background-color2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px -100px;
+  padding: 28px 0px;
+}
+
+.mobile-solutionn h3 {
+  color: var(--background-color);
+  background-color: var(--background-color2);
+}
+/* ai ml section */
+.ai-section {
+  position: relative;
+  width: 115%;
+  margin: -51px -100px;
+  padding-top: 60%;
+  background-color: #f5f7fa;
+  overflow: hidden;
+}
+
+.ai-section img {
+  position: absolute;
+  top: 0;
+  left: -85px;
+  width: 124%;
+  height: 100%;
+}
+
+/* lllm */
+.photo-section--dark {
+  background-color: #000; /* black */
+  color: #fff; /* white text */
+}
+
+.photo-section--dark .photo-text h1,
+.photo-section--dark .photo-text p,
+.photo-section--dark .photo-text li {
+  color: #fff;
+}
+
+.photo-section--dark .photo-text span {
+  background-color: #000;
 }
