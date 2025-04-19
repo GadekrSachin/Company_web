@@ -1,9 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
 .footer {
+  padding: 20px;
+  margin: -50px -100px -82px;
   background-color: #000;
   color: #fff;
-  padding: 40px 60px 20px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin: -50px -100px -80px -100px;
 }
 
 .footer-top {
@@ -112,3 +116,10 @@ hr {
   margin-top: 30px;
   border: 0.5px solid #444;
 }
+/* Media Query for 1440x900 or wider screens */
+/* @media screen and (min-width: 1440px) and (max-height: 900px) {
+  .footer {
+    margin: 20px -149px -71px -130px;
+    padding: 40px 40px;
+  }
+} */
