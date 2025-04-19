@@ -14,7 +14,6 @@ const About = () => {
           businesses with innovative technology solutions. Our mission is to
           enhance efficiency and drive growth through cutting-edge services.
         </p>
-
         <div className="info-cards">
           <div className="card">
             <div className="icon">💡</div>
@@ -25,7 +24,6 @@ const About = () => {
               innovation and customer satisfaction in all our projects.
             </p>
           </div>
-
           <div className="card">
             <div className="icon">👍</div>
             <h2>Our Values</h2>
@@ -35,7 +33,6 @@ const About = () => {
               high-quality solutions tailored to our clients' needs.
             </p>
           </div>
-
           <div className="card">
             <div className="icon">👥</div>
             <h2>Meet Our Team</h2>
@@ -46,7 +43,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <Footer></Footer>
+        {/* <Footer></Footer>; */}
       </div>
     </section>
   );

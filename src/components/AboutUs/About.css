@@ -1,6 +1,10 @@
 /* Base styles */
+* {
+  box-sizing: border-box;
+}
+
 .about-section {
-  padding: 60px 20px;
+  /* padding: 60px 20px; */
   font-family: "Segoe UI", sans-serif;
   background: #fff;
   color: #000;

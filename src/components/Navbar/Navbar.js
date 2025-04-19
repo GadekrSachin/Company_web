@@ -4,10 +4,12 @@ import "./Navbar.css";
 function Navbar() {
   return (
     <header className="navbar">
-      <div className="logo">ST</div>
+      <div className="logo">
+        <a href="/">ST</a>
+      </div>
       <nav className="nav-links">
         <a href="/about">AboutUs</a>
-        <a href="#services">Services</a>
+        <a href="/service">Services</a>
         <a href="#contact">Contact Us</a>
       </nav>
       <div className="nav-buttons">
