@@ -6,7 +6,7 @@ function Navbar() {
     <header className="navbar">
       <div className="logo">ST</div>
       <nav className="nav-links">
-        <a href="#about">About Us</a>
+        <a href="/about">AboutUs</a>
         <a href="#services">Services</a>
         <a href="#contact">Contact Us</a>
       </nav>
